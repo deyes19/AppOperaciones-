@@ -20,5 +20,13 @@ module AppOperaciones
     # config.eager_load_paths << Rails.root.join("extras")
     # config/application.rb
     config.assets.initialize_on_precompile = false
+
+    config.api_only =true
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource'*', headers: :any, methods: [:get, :post, :patch, :delete, :options]
+      end
+    end
   end
 end
