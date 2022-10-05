@@ -24,13 +24,8 @@
 /tmp/storage/*
 !/tmp/storage/
 !/tmp/storage/.keep
-
-/public/assets
-
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 /config/deploy-secrets.yml
-!/app/assets/builds/.keep
-
 /node_modules
 
