@@ -76,7 +76,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-  gem 'capistrano', '~> 3.4.0'
+  gem 'capistrano'
   gem 'capistrano-bundler'
   gem 'capistrano-rails', github: 'capistrano/rails'
   gem 'capistrano-rails-console'
