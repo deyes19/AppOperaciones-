@@ -9,6 +9,7 @@
     "sass": "^1.54.7"
   },
   "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap  --public-path=assets",
     "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
   }
 }
