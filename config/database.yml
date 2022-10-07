@@ -52,7 +52,7 @@ test:
 #
 production:
   <<: *default
-  database: AppOperaciones_production
-  username: AppOperaciones
+  database: appoperaciones_production
+  username: web
   adapter: postgresql
   password: <%= ENV["APPOPERACIONES_DATABASE_PASSWORD"] %>
